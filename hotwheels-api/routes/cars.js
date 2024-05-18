@@ -24,6 +24,23 @@ router.get('/', (req, res) => {
   });
 });
 
+/// Função para retornar um carro especifico
+function readCarsFile(callback) {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      callback(err, null);
+      return;
+    }
+    try {
+      const cars = JSON.parse(data);
+      callback(null, cars);
+    } catch (parseError) {
+      callback(parseError, null);
+    }
+  });
+}
+
+
   // Rota para o endpoint POST que adiciona dados ao arquivo JSON
 router.post('/', (req, res) => {
   // Lê o conteúdo atual do arquivo JSON
@@ -57,6 +74,26 @@ router.post('/', (req, res) => {
   });
 });
 
+// Rota para obter um carro por ID
+router.get('/:id', (req, res) => {
+  const carId = parseInt(req.params.id);
+
+  readCarsFile((err, cars) => {
+    if (err) {
+      return res.status(500).json({ error: 'Erro ao ler arquivo JSON' });
+    }
+
+    const car = cars.find(car => car.id === carId);
+    if (!car) {
+      return res.status(404).json({ error: 'Carro não encontrado' });
+    }
+
+    res.json(car);
+  });
+});
+
+
+
 // Rota DELETE para remover um carro pelo ID
 router.delete('/:id', (req, res) => {
   const carId = parseInt(req.params.id);
@@ -84,7 +121,7 @@ router.delete('/:id', (req, res) => {
 });
 
 // Rota PUT para atualizar um carro
-router.put('/', (req, res) => {
+router.put('/:id', (req, res) => {
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       console.error(err);

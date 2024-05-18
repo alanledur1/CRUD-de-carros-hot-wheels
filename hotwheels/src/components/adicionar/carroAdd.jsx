@@ -9,7 +9,6 @@ const CarroAdd = () => {
     const { data } = useCarroApi(`http://localhost:5000/cars/`);
 
     const [carros, setCarros] = useState(data || {
-        id: "",
         name: "",
         brand: "",
         color: "",
@@ -20,8 +19,10 @@ const CarroAdd = () => {
 
     useEffect(() => {
         if (data) {
+            const lastId = data.length > 0 ? data[data.length - 1].id : 0;
             setCarros({
-                ...data,
+                ...carros,
+                id: lastId + 1,
                 year: "", // Inicialize o ano como uma string vazia
             });
         }

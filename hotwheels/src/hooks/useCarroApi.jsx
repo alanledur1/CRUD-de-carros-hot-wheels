@@ -4,7 +4,7 @@ const useCarroApi = () => {
     
     const getAllCar = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/cars/cars`);
+            const response = await axios.get(`http://localhost:5000/cars`);
             return response.data;
         }   catch (error) {
             throw new Error(error.message);

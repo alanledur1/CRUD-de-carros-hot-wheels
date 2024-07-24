@@ -44,9 +44,7 @@ Este aplicativo permite:
 
 ### Exemplos de Uso
 
-![Demonstração em GIF](caminho/para/seu/video.gif)
-
-https://github.com/user-attachments/assets/1d1a066a-3812-4e11-97bf-6538b7152ec3
+[https://github.com/user-attachments/assets/1d1a066a-3812-4e11-97bf-6538b7152ec3](https://drive.google.com/file/d/1zbH0Sd59zphhx65qvDFBXAPPWOgx7ecr/view?usp=drive_link)
 
 ## Contato
 

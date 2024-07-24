@@ -43,8 +43,9 @@ Este aplicativo permite:
 - Excluir carrinhos Hotwheels da lista.
 
 ### Exemplos de Uso
-
-[https://github.com/user-attachments/assets/1d1a066a-3812-4e11-97bf-6538b7152ec3](https://drive.google.com/file/d/1zbH0Sd59zphhx65qvDFBXAPPWOgx7ecr/view?usp=drive_link)
+![Demonstração em GIF](caminho/para/seu/video.gif)
+https://github.com/user-attachments/assets/a8d45ae4-da79-4392-9bd9-6e6d4d122428
+https://drive.google.com/file/d/1zbH0Sd59zphhx65qvDFBXAPPWOgx7ecr/view?usp=drive_link
 
 ## Contato
 

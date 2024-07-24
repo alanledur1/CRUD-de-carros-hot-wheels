@@ -15,7 +15,7 @@ Para clonar e executar este aplicativo, você precisará do Git, Node.js (que in
 ### Clonar o Repositório
 
 ```bash
-$ git clone https://github.com/seu-usuario/hotwheels.gitt
+$ git clone https://github.com/alanledur1/CRUD-de-carros-hot-wheels.git
 
 Instalar Dependências e Executar o App
 

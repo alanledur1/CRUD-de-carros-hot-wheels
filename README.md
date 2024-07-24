@@ -45,7 +45,7 @@ Este aplicativo permite:
 ### Exemplos de Uso
 
 Inclua exemplos simples de comandos ou capturas de tela que mostram como os usuários podem interagir com seu aplicativo.
-
+https://github.com/user-attachments/assets/1d1a066a-3812-4e11-97bf-6538b7152ec3
 
 ## Contato
 

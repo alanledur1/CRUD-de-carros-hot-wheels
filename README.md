@@ -43,9 +43,22 @@ Este aplicativo permite:
 - Excluir carrinhos Hotwheels da lista.
 
 ### Exemplos de Uso
-![Demonstração em GIF](https://drive.google.com/file/d/1RJchOz_Yiaxow4klfNGqMgFFdR51IBRo/view?usp=drive_link)
-https://drive.google.com/file/d/1RJchOz_Yiaxow4klfNGqMgFFdR51IBRo/view?usp=drive_link
 
+- Excluindo carro da lista:
+
+  
+ ![Demonstração em GIF](hotwheels/src/img/gif1.gif)
+  
+
+- Tentativa de adicionar carro sem preencher os campos:
+  
+ ![Demonstração em GIF](hotwheels/src/img/gif2.gif)
+
+
+
+- Adicionando um carro:
+  
+![Demonstração em GIF](hotwheels/src/img/gif3.gif)
 
 ## Contato
 
